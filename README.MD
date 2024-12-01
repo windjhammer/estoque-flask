@@ -80,3 +80,46 @@ Este endpoint permite adicionar novos produtos à base de dados. Ele espera um c
   }
 ]
 ```
+### 3. **Atualizar Produto (PUT /atualizar)**
+
+Este endpoint atualiza as informações de um produto existente baseado em seu id.
+Ele espera um JSON com os seguintes campos:
+ - *nome_produto_antes*: Nome do produto que será atualizado.
+ - *quantidade*: nova quantidade do produto.
+ - *nome_produto*: novo nome do produto.
+ - *preco*: novo preço do produto.
+ - *categoria*: nova categoria do produto.
+
+```json
+{
+  "nome_produto_antes": "Cimento",
+  "quantidade": 120,
+  "nome_produto": "Cimento 50kg",
+  "preco": 35.00,
+  "categoria": "Construção"
+}
+```
+**Resposta Esperada**
+
+```json
+{
+  "id": 1,
+  "quantidade": 120,
+  "nome_produto": "Cimento 50kg",
+  "preco": 35.0,
+  "categoria": "Construção"
+}
+```
+
+### 4. **Apagar Produto (DELETE /apagar)**
+
+Este endpoint apaga um produto baseado no seu id, que obrigatóriamente deve ser passado como parâmetro de consulta.
+
+**Exemplo de requisição**
+
+´http://servidor-da-api:5000/apagar?id=3´
+
+**Resposta Esperada**
+
+`200 OK`
+
