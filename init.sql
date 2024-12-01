@@ -9,14 +9,13 @@ CREATE TABLE IF NOT EXISTS produtos (
 );
 
 INSERT INTO produtos (quantidade, nome_produto, preco, categoria) VALUES
-(50, 'Cimento Portland 50kg', 35.00, 'Cimentos'),
-(100, 'Areia Fina', 15.00, 'Areia'),
+(50, 'Cimento Poty 50kg', 35.00, 'Cimentos'),
+(100, 'Areia Lavada', 15.00, 'Areia'),
 (80, 'Bloco Cerâmico 39x19x14', 3.50, 'Blocos'),
-(200, 'Tinta Látex Acrílica 18L', 120.00, 'Tintas'),
+(200, 'Tinta Suvinil Acrílica 18L', 120.00, 'Tintas'),
 (150, 'Parafuso 3x25mm', 1.20, 'Ferragens'),
 (60, 'Cadeira de Alumínio', 80.00, 'Móveis'),
-(40, 'Piso Cerâmico 40x40cm', 35.00, 'Pisos e Revestimentos'),
+(40, 'Piso Cerâmico 40x40cm Elizabeth', 35.00, 'Pisos e Revestimentos'),
 (100, 'Cabo Elétrico 2,5mm', 2.50, 'Elétrica'),
 (30, 'Tábua de Madeira 2x20cm', 10.00, 'Madeiras'),
-(20, 'Tubulação PVC 25mm', 5.00, 'Tubos e Conexões');
-
+(20, 'Tubulação PVC 25mm Amanco', 5.00, 'Tubos e Conexões');
