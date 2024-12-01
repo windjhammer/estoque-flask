@@ -5,7 +5,6 @@ import os
 
 app = Flask(__name__)
 
-# Conexão com o banco usando variáveis de ambiente
 conn = mariadb.connect(
     user=os.getenv("DB_USER", "root"),
     password=os.getenv("DB_PASSWORD", ""),
