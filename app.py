@@ -41,6 +41,8 @@ def registrar_produto():
 def retorna_produtos():
     cursor.execute("SELECT * FROM produtos")
     produtos = cursor.fetchall()
+    for produto in produtos:
+        produto['preco'] = float(produto['preco'])
     return json.dumps(produtos), 200
 
 
